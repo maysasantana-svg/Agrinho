@@ -1,0 +1,157 @@
+/* Configurações Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Uma fonte limpa e moderna */
+    margin: 0;
+    padding: 0;
+    background-color: #90fd90; /* Um fundo verde-claro bem pastel, quase branco */
+    color: #333; /* Texto em cinza escuro para melhor leitura */
+}
+
+/* Estilo para links em geral (removendo sublinhado) */
+a {
+    text-decoration: none;
+}
+
+/* Cabeçalho (Header) */
+header {
+    background-color: #c9f5f7; /* Fundo branco para o topo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 2px 5px rgba(6, 49, 13, 0.05); /* Uma sombra suave para dar profundidade */
+}
+
+header .logo h1 {
+    color: #5add5e; /* O verde principal do Agrinho no logo */
+    margin: 0;
+    font-size: 1.5em;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #555;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Efeito suave ao passar o mouse */
+}
+
+header nav ul li a:hover {
+    color: #a5d6a7; /* Verde pastel ao passar o mouse */
+}
+
+/* Seção Principal / Banner (Hero) */
+.hero {
+    /* IMPORTANTE: Aqui precisamos definir uma imagem de fundo real. 
+       Você pode procurar por "agricultura sustentável" em sites de banco de imagem gratuitos (como Unsplash ou Pexels).
+       Salve a imagem na sua pasta com o nome 'banner.jpg' ou mude o link abaixo. */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.pexels.com/photos/2165891/pexels-photo-2165891.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); 
+    background-size: cover;
+    background-position: center;
+    height: 80vh; /* Ocupa 80% da altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Sombra no texto para destacar da imagem */
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #81c784; /* Verde pastel para o botão */
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #66bb6a; /* Tom de verde um pouco mais escuro no hover */
+}
+
+/* Seção Sobre (General Content Sections) */
+.conteudo {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.conteudo h2 {
+    color: #45a049; /* Outro tom de verde mais escuro para títulos */
+    margin-bottom: 20px;
+}
+
+/* Seção de Sustentabilidade (Cards) */
+.recursos {
+    background-color: #e8f5e9; /* Um verde pastel ligeiramente diferente para contrastar as seções */
+    padding: 60px 20px;
+}
+
+.recursos h2 {
+    text-align: center;
+    color: #45a049;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Faz os cards 'quebrarem de linha' em telas menores */
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(33% - 40px); /* Ocupa 1/3 da largura, descontando o gap */
+    min-width: 280px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Sombra mais visível para os cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efeito de 'levitar' no hover */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #66bb6a;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #666;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+/* Rodapé (Footer) */
+footer {
+    background-color: #333; /* Rodapé escuro para contraste final */
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
